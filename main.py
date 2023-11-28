@@ -123,7 +123,6 @@ def menu():
         ..............................................................................ccccc.............................................................................
         ..............................................................................ccccc.............................................................................
     """))
-    game.show_long_text("Posicionate en el lado IZQ o DER y pulsa B para hacer la seleccion", DialogLayout.BOTTOM)
 
     #CREACION PERSONAJE
     main_char = sprites.create(img("""
@@ -145,6 +144,8 @@ def menu():
         . . . . . f f . . f f . . . . .
     """), SpriteKind.player)
     main_char.set_position(76, 81)
+    
+    game.show_long_text("Posicionate en el lado IZQ o DER y pulsa B para hacer la seleccion", DialogLayout.TOP)
 
     #HABILITAR CONTROLES PERSONAJE
     controller.move_sprite(main_char)

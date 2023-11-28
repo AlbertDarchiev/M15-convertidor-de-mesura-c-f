@@ -123,7 +123,6 @@ function menu() {
         ..............................................................................ccccc.............................................................................
         ..............................................................................ccccc.............................................................................
     `)
-    game.showLongText("Posicionate en el lado IZQ o DER y pulsa B para hacer la seleccion", DialogLayout.Bottom)
     // CREACION PERSONAJE
     let main_char = sprites.create(img`
         . . . . . . f f f f . . . . . .
@@ -144,6 +143,7 @@ function menu() {
         . . . . . f f . . f f . . . . .
     `, SpriteKind.Player)
     main_char.setPosition(76, 81)
+    game.showLongText("Posicionate en el lado IZQ o DER y pulsa B para hacer la seleccion", DialogLayout.Top)
     // HABILITAR CONTROLES PERSONAJE
     controller.moveSprite(main_char)
     controller.B.onEvent(ControllerButtonEvent.Pressed, function on_event_pressed() {
