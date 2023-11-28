@@ -123,6 +123,7 @@ function menu() {
         ..............................................................................ccccc.............................................................................
         ..............................................................................ccccc.............................................................................
     `)
+    game.showLongText("Posicionate en el lado IZQ o DER y pulsa B para hacer la seleccion", DialogLayout.Bottom)
     // CREACION PERSONAJE
     let main_char = sprites.create(img`
         . . . . . . f f f f . . . . . .
